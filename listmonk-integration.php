@@ -317,6 +317,11 @@ function listmonk_send_data_through_wpforms( $fields, $entry, $form_data, $entry
         'confirmed_consent' => 'true', // user gave consent to receive newsletter
         'ip_address' => $ip, // ip address of user
         'consent_agreement' => 'I consent to receiving periodic newsletters from ' . $website_name . '.', // Use the website name dynamically
+        'consent_GDPR_agreement' => 'I consent to GDPR policy from ' . $website_name . '.', // Use the website name dynamically
+        'language' => sanitize_text_field($fields['10']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
+        'phone' => sanitize_text_field($fields['6']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
+        'center' => sanitize_text_field($fields['8']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
+        'amount' => sanitize_text_field($fields['9']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
         ] ;
 
     // remove email from name field input
