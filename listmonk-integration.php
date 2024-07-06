@@ -321,7 +321,7 @@ function listmonk_send_data_through_wpforms( $fields, $entry, $form_data, $entry
         'consent_GDPR_agreement' => 'I consent to GDPR policy from ' . $website_name . '.', // Use the website name dynamically
         'language' => sanitize_text_field($fields['10']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
         'phone' => sanitize_text_field($fields['6']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
-        'center_in_poland-required' => sanitize_text_field($fields['12']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
+        'center_in_poland_required' => sanitize_text_field($fields['12']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
         'center_world_optional' => sanitize_text_field($fields['8']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
         'amount' => sanitize_text_field($fields['9']['value']), // get <custom> from form, this assumes it is the <N>  field in the form
         ] ;
